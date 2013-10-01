@@ -24,7 +24,9 @@ CKEDITOR.editorConfig = function( config )
 
   config.floatingtools = 'Basic';
   config.floatingtools_Basic = [
-    ['Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link']
+    [ 'Styles', 'Format', '-', 'JustifyLeft','JustifyCenter','JustifyRight'],
+    ['TransformTextSwitcher', 'TransformTextToLowercase', 'TransformTextToUppercase', 'TransformTextCapitalize'],
+    ['Bold', 'Italic', '-', 'NumberedList', 'BulletedList', 'CreateDiv', '-', 'Link', 'Unlink']
   ];
 
   config.stylesSet = [];
