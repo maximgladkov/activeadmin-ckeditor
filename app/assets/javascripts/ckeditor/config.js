@@ -20,10 +20,10 @@ CKEDITOR.editorConfig = function( config )
     { name: 'others',      items: [ 'Maximize', 'ShowBlocks' ] }
   ];
 
-  // config.floatingtools = 'Basic';
-  // config.floatingtools_Basic = [
-  //   ['Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link']
-  // ];
+  config.floatingtools = 'Basic';
+  config.floatingtools_Basic = [
+    ['Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link']
+  ];
 
   config.stylesSet = [];
   config.contentsCss = '/assets/ckeditor/styles.css';
