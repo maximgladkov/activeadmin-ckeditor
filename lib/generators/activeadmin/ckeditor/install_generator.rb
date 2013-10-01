@@ -12,6 +12,9 @@ module Activeadmin
           gsub_file "app/assets/javascripts/active_admin.js", '//= require active_admin/base', "//= require active_admin/base\n//= require ckeditor/init"
           prepend_file "app/assets/stylesheets/active_admin.css.scss", "//= require activeadmin-ckeditor\n"
           application 'config.autoload_paths += %W(#{ config.root }/app/models/ckeditor)'
+          environment(nil, env: "production") do
+            "config.assets.precompile += %W( ckeditor/plugins/**/*.js )"
+          end
         end
       end
     end
