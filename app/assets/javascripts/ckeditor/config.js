@@ -20,6 +20,8 @@ CKEDITOR.editorConfig = function( config )
     { name: 'others',      items: [ 'Maximize', 'ShowBlocks' ] }
   ];
 
+  config.format_tags = 'p;h2;h3;h4;h5;h6'
+
   config.floatingtools = 'Basic';
   config.floatingtools_Basic = [
     ['Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link']
